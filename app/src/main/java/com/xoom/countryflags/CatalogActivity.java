@@ -1,9 +1,9 @@
 package com.xoom.countryflags;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
 import com.xoom.countryflags.catalog.ui.CatalogFragment;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 public class CatalogActivity extends AppCompatActivity {
 
