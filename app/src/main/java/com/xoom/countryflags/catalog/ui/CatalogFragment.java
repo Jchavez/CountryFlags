@@ -1,5 +1,7 @@
 package com.xoom.countryflags.catalog.ui;
 
+import com.xoom.countryflags.R;
+
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,11 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.xoom.countryflags.R;
-
 public class CatalogFragment extends Fragment {
 
-    private CatalogViewModel mViewModel;
+    private CatalogViewModel catalogViewModel;
 
     public static CatalogFragment newInstance() {
         return new CatalogFragment();
@@ -29,7 +29,7 @@ public class CatalogFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(CatalogViewModel.class);
+        catalogViewModel = ViewModelProviders.of(this).get(CatalogViewModel.class);
         // TODO: Use the ViewModel
     }
 }
